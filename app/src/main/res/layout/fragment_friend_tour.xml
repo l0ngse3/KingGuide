@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MiniTourFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b3b3b3"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spnSex"
+                android:layout_width="175dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/custom_textview" />
+
+            <Spinner
+                android:id="@+id/spnProvince"
+                android:layout_width="175dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/custom_textview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_textview"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/lypr_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHinh1"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_textview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friend1"/>
+
+                <RelativeLayout
+                    android:id="@+id/ly_re1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/imgHinh1">
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="David Hanson"
+                        android:textColor="#2051a1"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTitle"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Date: 17/9/2018"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDate"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Place: Hà Nội"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imgFb"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation"
+                        android:src="@drawable/ic_facebook"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgWa"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgFb"
+                        android:src="@drawable/ic_whatsapp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgMail"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation"
+                        android:layout_toEndOf="@id/imgWa"
+                        android:src="@drawable/ic_google_plus"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/custom_button_detail"
+                        android:padding="2dp"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#fffefe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lypr_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHinh2"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_textview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friend2" />
+
+                <RelativeLayout
+                    android:id="@+id/ly_re2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/imgHinh2">
+
+                    <TextView
+                        android:id="@+id/txtTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Noam Elkies"
+                        android:textColor="#2051a1"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTitle2"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Date: 10/10/2018"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtLocation2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDate2"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Place: Hà Nội"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imgFb2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation2"
+                        android:src="@drawable/ic_facebook"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgWa2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgFb2"
+                        android:src="@drawable/ic_whatsapp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgMail2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation2"
+                        android:layout_toEndOf="@id/imgWa2"
+                        android:src="@drawable/ic_google_plus"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/custom_button_detail"
+                        android:padding="2dp"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#fffefe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lypr_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHinh3"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_textview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friend3" />
+
+                <RelativeLayout
+                    android:id="@+id/ly_re3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/imgHinh3">
+
+                    <TextView
+                        android:id="@+id/txtTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="George Orwell"
+                        android:textColor="#2051a1"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTitle3"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Date: 26/9/2018"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtLocation3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDate3"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Place: Hồ Chí Minh"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imgFb3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation3"
+                        android:src="@drawable/ic_facebook"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgWa3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgFb3"
+                        android:src="@drawable/ic_whatsapp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgMail3"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgWa3"
+                        android:src="@drawable/ic_google_plus"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/custom_button_detail"
+                        android:padding="2dp"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#fffefe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lypr_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHinh4"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_textview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friend4" />
+
+                <RelativeLayout
+                    android:id="@+id/ly_re4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/imgHinh4">
+
+                    <TextView
+                        android:id="@+id/txtTitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Yuval Salomon"
+                        android:textColor="#2051a1"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTitle4"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Date: 17/10/2018"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtLocation4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDate4"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Place: Đà Nẵng"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imgFb4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation4"
+                        android:src="@drawable/ic_facebook"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgWa4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgFb4"
+                        android:src="@drawable/ic_whatsapp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgMail4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgWa4"
+                        android:src="@drawable/ic_google_plus"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/custom_button_detail"
+                        android:padding="2dp"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#fffefe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lypr_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHinh5"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_textview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friend5" />
+
+                <RelativeLayout
+                    android:id="@+id/ly_re5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/imgHinh5">
+
+                    <TextView
+                        android:id="@+id/txtTitle5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Julian Dennison"
+                        android:textColor="#2051a1"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTitle5"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Date: 5/9/2018"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtLocation5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDate5"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Place: Hạ Long Bay"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imgFb5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation5"
+                        android:src="@drawable/ic_facebook"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgWa5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgFb5"
+                        android:src="@drawable/ic_whatsapp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgMail5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation5"
+                        android:layout_toEndOf="@id/imgWa5"
+                        android:src="@drawable/ic_google_plus"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/custom_button_detail"
+                        android:padding="2dp"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#fffefe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lypr_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHinh6"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_textview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friend6" />
+
+                <RelativeLayout
+                    android:id="@+id/ly_re6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/imgHinh6">
+
+                    <TextView
+                        android:id="@+id/txtTitle6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Maria Grazia"
+                        android:textColor="#2051a1"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTitle6"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Date: 10/10/2018"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtLocation6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDate6"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Place: Hà Nội"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imgFb6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation6"
+                        android:src="@drawable/ic_facebook"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgWa6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgFb6"
+                        android:src="@drawable/ic_whatsapp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgMail6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation6"
+                        android:layout_toEndOf="@id/imgWa6"
+                        android:src="@drawable/ic_google_plus"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/custom_button_detail"
+                        android:padding="2dp"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#fffefe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lypr_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHinh7"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_textview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friend7" />
+
+                <RelativeLayout
+                    android:id="@+id/ly_re7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/imgHinh7">
+
+                    <TextView
+                        android:id="@+id/txtTitle7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Sara Sampaio"
+                        android:textColor="#2051a1"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTitle7"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Date: 17/9/2018"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtLocation7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDate7"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="Place: Hồ Chí Minh"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imgFb7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation7"
+                        android:src="@drawable/ic_facebook"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgWa7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/imgFb7"
+                        android:src="@drawable/ic_whatsapp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/imgMail7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/txtLocation7"
+                        android:layout_toEndOf="@id/imgWa7"
+                        android:src="@drawable/ic_google_plus"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/custom_button_detail"
+                        android:padding="2dp"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#fffefe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
